@@ -57,6 +57,15 @@ FAILED_AUTH_WINDOW = "7200"    # Time window in seconds (60 = 1 minute for dev/t
 
 
 
+# Routes - Custom domain configuration
+[[routes]]
+pattern = "short.microstor.fr/*"
+zone_name = "microstor.fr"
+
+[[routes]]
+pattern = "short.microstor.fr"
+zone_name = "microstor.fr"
+
 # Cron triggers for scheduled tasks
 # Daily tasks (midnight UTC): analytics aggregation and top 100 status check
 # Status check every 6 hours: regular link status monitoring
